@@ -310,7 +310,7 @@ config  ARCH_MSM_KRAITMP
 
 config  ARCH_MSM_CORTEX_A5
 	bool
-	select HAVE_HW_BRKPT_RESERVED_RW_ACCESS
+	select HAVE_HW_BRKPT_RESERVED_RW_ACCESS if HAVE_HW_BREAKPOINT
 
 config ARCH_MSM7X27A
 	bool
@@ -1418,7 +1418,7 @@ config MSM_CPU_FREQ_SET_MIN_MAX
 config MSM_CPU_FREQ_MAX
 	int "Max CPU Frequency"
 	depends on MSM_CPU_FREQ_SET_MIN_MAX
-	default 384000
+	default 1008000
 
 config MSM_CPU_FREQ_MIN
 	int "Min CPU Frequency"

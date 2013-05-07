@@ -216,6 +216,7 @@ config CPU_FREQ_GOV_CONSERVATIVE
 config CPU_FREQ_GOV_SMARTASS2
 	tristate "'smartassV2' cpufreq governor"
 	depends on CPU_FREQ
+	default y
 	help
 	  'smartassV2' - a "smart" governor
 
@@ -224,6 +225,7 @@ config CPU_FREQ_GOV_SMARTASS2
 config CPU_FREQ_GOV_INTERACTIVEX
 	tristate "'interactiveX' cpufreq policy governor"
 	depends on CPU_FREQ
+	default y
 	help
 	  'InteractiveX' - Modified version of interactive with sleep+wake code.
 
@@ -232,6 +234,7 @@ config CPU_FREQ_GOV_INTERACTIVEX
 config CPU_FREQ_GOV_SAVAGEDZEN
 	tristate "'savagedzen' cpufreq governor"
 	depends on CPU_FREQ
+	default y
 	help
 	  'Savaged-Zen' - a "smartass" based governor
 
